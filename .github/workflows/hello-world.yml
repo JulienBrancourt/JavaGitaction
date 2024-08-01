@@ -1,0 +1,15 @@
+name: Premier workflow
+
+# Déclencheur du workflow
+on: workflow_dispatch
+
+# Actions à réaliser au déclenchement du workflow
+jobs:
+  premier-job:
+    # Runner : type d'environnement
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dit bonjour
+        run: echo "Hello world !!!"
+      - name: Dit au revoir
+        run: echo "Goodbye !"
